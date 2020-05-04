@@ -24,12 +24,12 @@
 
 	move.l	d0,a3		;Adresse de l'écran
 
-	move.l	#pi1+34,a0	;source
-	move.l	a3,a1		;destionation
+	move.l	#pi1+34,a0	;Source
+	move.l	a3,a1		;Destionation
 
-	move.w	#32000/4-1,d0	;nombre de longs - 1
+	move.w	#32000/4-1,d0	;Nombre de longs - 1
 copie:
-	move.l	(a0)+,(a1)+	;copier un long
+	move.l	(a0)+,(a1)+	;Copier un long
 	dbf	d0,copie
 
 	move.w	#8,-(sp)	;Cnecin
