@@ -25,7 +25,7 @@
 	move.l	d0,a3		;Adresse de l'écran
 
 	move.l	#pi1+34,a0	;Source
-	move.l	a3,a1		;Destionation
+	move.l	a3,a1		;Destination
 
 	move.w	#32000/4-1,d0	;Nombre de longs - 1
 copie:
